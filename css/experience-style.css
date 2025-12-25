@@ -1,0 +1,80 @@
+/* Experience Skills Box Styles */
+.experience-skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.experience-box-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.experience-box {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.experience-box:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-color: var(--secondary-color);
+}
+
+.experience-box-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.experience-box-title h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 20px;
+}
+
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.skill-icon {
+    min-width: 24px;
+    margin-right: 12px;
+    padding-top: 2px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.skill-icon i.fa-check-circle {
+    /* Using check-circle for the tick icon */
+}
+
+.skill-info h5 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.skill-info p {
+    font-size: 13px;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    font-weight: 400;
+}
